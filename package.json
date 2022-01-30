@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js",
-    "pro": "env-cmd -f ./.env nodemon ./bin/www"
+    "dev": "nodemon index.js",
+    "pro": "env-cmd -f ./.env nodemon .index.js"
   },
   "author": "",
   "license": "ISC",

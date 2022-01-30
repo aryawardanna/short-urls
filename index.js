@@ -33,5 +33,3 @@ app.get('/:shortUrl', async (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000);
-//useNewUrlParser: true, // <-- no longer necessary
-//useUnifiedTopology: true // <-- no longer necessary

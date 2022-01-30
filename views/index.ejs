@@ -15,18 +15,24 @@
   </head>
   <body>
     <div class="container">
-      <h1>Url Shrot</h1>
+      <h1>Url Shortener</h1>
       <form action="/shortUrls" method="post" class="my-4 form-inline">
         <label for="fullUrl" class="visually-hidden">Url</label>
-        <input
-          type="url"
-          name="fullUrl"
-          id="fullUrl"
-          placeholder="Url"
-          class="form-control me-3 col-6"
-          required
-        />
-        <button type="submit" class="btn btn-success mt-3">submit</button>
+        <div class="row">
+          <div class="col-8">
+            <input
+              type="url"
+              name="fullUrl"
+              id="fullUrl"
+              placeholder="Url"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
       </form>
 
       <table class="table table-stripe table-responsive">
@@ -34,7 +40,7 @@
           <tr>
             <th>Full URL</th>
             <th>Short URL</th>
-            <th>Clicks</th>
+            <th target="_blank" rel="noopener noreferrer">Clicks</th>
           </tr>
         </thead>
         <tbody>
